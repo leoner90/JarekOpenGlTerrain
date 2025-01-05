@@ -24,10 +24,23 @@
     <None Include="shaders\basic.vert">
       <Filter>Shader Source Files</Filter>
     </None>
+    <None Include="shaders\basic.frag.shader" />
+    <None Include="shaders\basic.vert.shader" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Texturing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shaders\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\Texturing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

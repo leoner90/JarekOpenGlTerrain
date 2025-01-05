@@ -142,6 +142,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\headers\;$(ProjectDir)\source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -169,7 +170,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="shaders\basic.frag" />
+    <None Include="shaders\basic.frag.shader" />
     <None Include="shaders\basic.vert" />
+    <None Include="shaders\basic.vert.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="3dgl\3dgl.vcxproj">
@@ -178,6 +181,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\Texturing.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shaders\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\Texturing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
